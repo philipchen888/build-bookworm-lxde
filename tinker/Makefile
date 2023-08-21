@@ -28,7 +28,7 @@ prebuild:
 	--apt-recommends false \
 	--apt-secure false \
 	--architectures armhf \
-	--archive-areas 'main contrib non-free' \
+	--archive-areas 'main contrib non-free-firmware' \
 	--backports false \
 	--binary-filesystem ext4 \
 	--binary-images tar \

@@ -34,9 +34,9 @@ Steps to build Debian Bookworm lxde sdcard image:
 4. cd ~/build-bookworm-lxde/radxa
    sudo apt-get install libgnutls28-dev
    git clone https://github.com/u-boot/u-boot.git -b u-boot-2023.07.y
-   wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.15.tar.xz
-   tar -xJf linux-5.15.tar.xz
-   cd linux-5.15; mkdir tmp; cd tmp; mkdir lib;
+   wget https://git.kernel.org/torvalds/t/linux-6.5-rc6.tar.gz
+   tar -xzf linux-6.5-rc6.tar.gz
+   cd linux; mkdir tmp; cd tmp; mkdir lib;
    cd ../../; mkdir out;
 
    make all
@@ -58,8 +58,8 @@ Steps to build Debian Bookworm lxde sdcard image:
 
    sudo dd if=./out/sdcard.img of=/dev/sda bs=4096 conv=notrunc,fsync
 
-Wifi drivers of tinker is not supported in linux mainline kernel.
-Plugin ethernet cable to tinker.
+Wifi drivers of radxa and tinker are not supported in linux mainline kernel.
+Plugin ethernet cable to radxa and tinker.
 Plugin USB headphone to tinker and rpi4b.
 Plugin sdcard to SBC.
 Login:
