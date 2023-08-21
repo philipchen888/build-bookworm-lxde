@@ -36,7 +36,7 @@ Steps to build Debian Bookworm lxde sdcard image:
    git clone https://github.com/u-boot/u-boot.git -b u-boot-2023.07.y
    wget https://git.kernel.org/torvalds/t/linux-6.5-rc6.tar.gz
    tar -xzf linux-6.5-rc6.tar.gz
-   cd linux; mkdir tmp; cd tmp; mkdir lib;
+   cd linux-6.5-rc6; mkdir tmp; cd tmp; mkdir lib;
    cd ../../; mkdir out;
 
    make all
